@@ -52,21 +52,23 @@ import ProviderLayout from "./components/ProviderLayout";
 import { providerAPI, ProviderLoginData } from "./services/api";
 
 const theme = {
-  primaryColor: "blue",
+  primaryColor: "indigo",
   colors: {
-    blue: [
-      "#eff6ff",
-      "#dbeafe",
-      "#bfdbfe",
-      "#93c5fd",
-      "#60a5fa",
-      "#3b82f6",
-      "#2563eb",
-      "#1d4ed8",
-      "#1e40af",
-      "#1e3a8a",
+    // Modern Indigo - Professional and trustworthy
+    indigo: [
+      "#eef2ff",
+      "#e0e7ff", 
+      "#c7d2fe",
+      "#a5b4fc",
+      "#818cf8",
+      "#6366f1",
+      "#4f46e5",
+      "#4338ca",
+      "#3730a3",
+      "#312e81",
     ] as const,
-    green: [
+    // Soft Emerald - Calming and healing
+    emerald: [
       "#ecfdf5",
       "#d1fae5",
       "#a7f3d0",
@@ -78,17 +80,44 @@ const theme = {
       "#065f46",
       "#064e3b",
     ] as const,
-    teal: [
-      "#f0fdfa",
-      "#ccfbf1",
-      "#99f6e4",
-      "#5eead4",
-      "#2dd4bf",
-      "#14b8a6",
-      "#0d9488",
-      "#0f766e",
-      "#115e59",
-      "#134e4a",
+    // Warm Amber - Welcoming and friendly
+    amber: [
+      "#fffbeb",
+      "#fef3c7",
+      "#fde68a",
+      "#fcd34d",
+      "#fbbf24",
+      "#f59e0b",
+      "#d97706",
+      "#b45309",
+      "#92400e",
+      "#78350f",
+    ] as const,
+    // Cool Slate - Neutral and professional
+    slate: [
+      "#f8fafc",
+      "#f1f5f9",
+      "#e2e8f0",
+      "#cbd5e1",
+      "#94a3b8",
+      "#64748b",
+      "#475569",
+      "#334155",
+      "#1e293b",
+      "#0f172a",
+    ] as const,
+    // Rose - Warm and caring
+    rose: [
+      "#fff1f2",
+      "#ffe4e6",
+      "#fecdd3",
+      "#fda4af",
+      "#fb7185",
+      "#f43f5e",
+      "#e11d48",
+      "#be123c",
+      "#9f1239",
+      "#881337",
     ] as const,
   },
   fontFamily:
