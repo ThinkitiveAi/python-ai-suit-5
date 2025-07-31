@@ -1,0 +1,40 @@
+-- Insert test provider directly into SQLite database
+INSERT INTO providers (
+    id,
+    first_name,
+    last_name,
+    email,
+    phone_number,
+    password_hash,
+    specialization,
+    license_number,
+    years_of_experience,
+    clinic_address,
+    verification_status,
+    is_active,
+    failed_login_attempts,
+    locked_until,
+    created_at,
+    updated_at,
+    last_login,
+    login_count
+) VALUES (
+    '123e4567-e89b-12d3-a456-426614174000',
+    'Vaibhav',
+    'Martinez',
+    'vaibhav@gmail.com',
+    '+12345678907',
+    '$2b$12$LQv3c1yqBWVHxkd0LHAkCOYz6TtxMQJqhN8/LewdBPj3bp.gSInG2',  -- Hash for "Vaibhav@gmail10.com"
+    'Cardiology',
+    'MD2024001',
+    10,
+    '{"street": "123 Medical Center Drive", "city": "New York", "state": "NY", "zip": "10001"}',
+    'verified',
+    1,
+    0,
+    NULL,
+    '2025-07-31 09:43:00',
+    '2025-07-31 09:43:00',
+    NULL,
+    0
+);
