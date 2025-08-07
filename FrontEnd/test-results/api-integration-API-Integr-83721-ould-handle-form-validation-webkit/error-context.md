@@ -1,0 +1,86 @@
+# Page snapshot
+
+```yaml
+- button:
+  - img
+- heading "Enhanced Provider Availability Management" [level=2]:
+  - img
+  - text: Enhanced Provider Availability Management
+- paragraph: Dr. Sarah Johnson • Cardiologist • Thu, Aug 7
+- button "Add Availability":
+  - img
+  - text: Add Availability
+- button "Refresh" [disabled]:
+  - img
+  - text: Refresh
+- paragraph: Availability Statistics
+- img
+- paragraph: Utilization
+- paragraph: 0.0%
+- paragraph: "0"
+- paragraph: Available
+- paragraph: "0"
+- paragraph: Booked
+- paragraph: Appointment Statistics
+- paragraph: "0"
+- paragraph: Total
+- paragraph: 0.0%
+- paragraph: Completion
+- tablist:
+  - tab "Availability Slots" [selected]:
+    - img
+    - text: Availability Slots
+  - tab "Appointments":
+    - img
+    - text: Appointments
+- tabpanel "Availability Slots":
+  - heading "Availability Slots" [level=3]
+  - text: 3 slots
+  - table:
+    - rowgroup:
+      - row "Date Time Duration Status Type Actions":
+        - cell "Date"
+        - cell "Time"
+        - cell "Duration"
+        - cell "Status"
+        - cell "Type"
+        - cell "Actions"
+    - rowgroup:
+      - row "Mon, Jan 15 09:00 - 10:00 60 min Available Consultation":
+        - cell "Mon, Jan 15"
+        - cell "09:00 - 10:00"
+        - cell "60 min"
+        - cell "Available"
+        - cell "Consultation"
+        - cell:
+          - button:
+            - img
+          - button:
+            - img
+          - button:
+            - img
+      - row "Mon, Jan 15 10:00 - 11:00 60 min Booked Follow-up":
+        - cell "Mon, Jan 15"
+        - cell "10:00 - 11:00"
+        - cell "60 min"
+        - cell "Booked"
+        - cell "Follow-up"
+        - cell:
+          - button:
+            - img
+          - button:
+            - img
+      - row "Thu, Aug 7 09:00 - 10:00 60 min Available -":
+        - cell "Thu, Aug 7"
+        - cell "09:00 - 10:00"
+        - cell "60 min"
+        - cell "Available"
+        - cell "-"
+        - cell:
+          - button:
+            - img
+          - button:
+            - img
+          - button:
+            - img
+```

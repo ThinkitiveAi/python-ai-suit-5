@@ -2,7 +2,7 @@
 Main API v1 router that includes all endpoint routers.
 """
 from fastapi import APIRouter
-from api.v1.endpoints import provider, auth, provider_router
+from api.v1.endpoints import provider, auth, provider_router, availability
 
 router = APIRouter()
 
@@ -25,4 +25,11 @@ router.include_router(
     auth.router,
     prefix="/auth",
     tags=["authentication"]
+)
+
+# Include availability and appointment endpoints
+router.include_router(
+    availability.router,
+    prefix="/providers",
+    tags=["availability"]
 )

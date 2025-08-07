@@ -594,6 +594,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@playwright/test@npm:^1.54.2":
+  version: 1.54.2
+  resolution: "@playwright/test@npm:1.54.2"
+  dependencies:
+    playwright: "npm:1.54.2"
+  bin:
+    playwright: cli.js
+  checksum: 10/33d6c0780ef6cca12c008cae166ba06978ae975138a1654e14cd8691ad7826dbbc03e492ed42c65889c44ca893d0fd47d8ae4dc8d824020d7f767260b395dc6b
+  languageName: node
+  linkType: hard
+
 "@tabler/icons-react@npm:^3.34.1":
   version: 3.34.1
   resolution: "@tabler/icons-react@npm:3.34.1"
@@ -730,6 +741,15 @@ __metadata:
   peerDependencies:
     "@types/react": "*"
   checksum: 10/13f610572c073970b3f43cc446396974fed786fee6eac2d6fd4b0ca5c985f13e79d4a0de58af4e5b4c68470d808567c3a14108d98edb7d526d4d46c8ec851ed1
+  languageName: node
+  linkType: hard
+
+"@types/node@npm:^24.2.0":
+  version: 24.2.0
+  resolution: "@types/node@npm:24.2.0"
+  dependencies:
+    undici-types: "npm:~7.10.0"
+  checksum: 10/b81501e05f15df28102baac60afbc82d30009ee0bf4dee41b7fa326ec5789d0d83dd28c418e04dc30a9513ab6afb9813edc75042aef751336d8dcfefe099709c
   languageName: node
   linkType: hard
 
@@ -1446,12 +1466,12 @@ __metadata:
   linkType: hard
 
 "follow-redirects@npm:^1.15.6":
-  version: 1.15.10
-  resolution: "follow-redirects@npm:1.15.10"
+  version: 1.15.11
+  resolution: "follow-redirects@npm:1.15.11"
   peerDependenciesMeta:
     debug:
       optional: true
-  checksum: 10/29a0e970ad81390f71423438395b8bcda433393d57596b4fd6f6eb68c0d3bf81cd29dc05b20b18c57fe2fe92eb53bb0c9f64760d7a631395ee351a63764b8e33
+  checksum: 10/07372fd74b98c78cf4d417d68d41fdaa0be4dcacafffb9e67b1e3cf090bc4771515e65020651528faab238f10f9b9c0d9707d6c1574a6c0387c5de1042cde9ba
   languageName: node
   linkType: hard
 
@@ -1505,7 +1525,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fsevents@npm:~2.3.2":
+"fsevents@npm:2.3.2, fsevents@npm:~2.3.2":
   version: 2.3.2
   resolution: "fsevents@npm:2.3.2"
   dependencies:
@@ -1515,7 +1535,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fsevents@patch:fsevents@npm%3A~2.3.2#optional!builtin<compat/fsevents>":
+"fsevents@patch:fsevents@npm%3A2.3.2#optional!builtin<compat/fsevents>, fsevents@patch:fsevents@npm%3A~2.3.2#optional!builtin<compat/fsevents>":
   version: 2.3.2
   resolution: "fsevents@patch:fsevents@npm%3A2.3.2#optional!builtin<compat/fsevents>::version=2.3.2&hash=df0bf1"
   dependencies:
@@ -2122,6 +2142,30 @@ __metadata:
   languageName: node
   linkType: hard
 
+"playwright-core@npm:1.54.2":
+  version: 1.54.2
+  resolution: "playwright-core@npm:1.54.2"
+  bin:
+    playwright-core: cli.js
+  checksum: 10/8eb8b37d7b02c2394f85567c5703464ee7c85929e1de7118946548a0277cacd41a6f247b8f7eb50c921433346f785356eff8132a9d3c6c2dcf3402c6a83e4f18
+  languageName: node
+  linkType: hard
+
+"playwright@npm:1.54.2":
+  version: 1.54.2
+  resolution: "playwright@npm:1.54.2"
+  dependencies:
+    fsevents: "npm:2.3.2"
+    playwright-core: "npm:1.54.2"
+  dependenciesMeta:
+    fsevents:
+      optional: true
+  bin:
+    playwright: cli.js
+  checksum: 10/3f4fedc1e2290b6da6960eedf0d78b9097251848b499b0627186ca85e94178fe6be1590c4926246ff4dad5729fc80ab63fee6554fe736d29c0a1808ec483467f
+  languageName: node
+  linkType: hard
+
 "postcss@npm:^8.4.16":
   version: 8.4.17
   resolution: "postcss@npm:8.4.17"
@@ -2184,9 +2228,11 @@ __metadata:
     "@mantine/form": "npm:^8.2.1"
     "@mantine/hooks": "npm:^8.2.1"
     "@mantine/notifications": "npm:^8.2.1"
+    "@playwright/test": "npm:^1.54.2"
     "@tabler/icons-react": "npm:^3.34.1"
     "@tanstack/react-router": "npm:^1.129.8"
     "@tanstack/router-devtools": "npm:^1.129.8"
+    "@types/node": "npm:^24.2.0"
     "@types/react": "npm:^18.0.17"
     "@types/react-dom": "npm:^18.0.6"
     "@vitejs/plugin-react": "npm:^2.1.0"
@@ -2688,6 +2734,13 @@ __metadata:
     tsc: bin/tsc
     tsserver: bin/tsserver
   checksum: 10/5d81fd8cf5152091a0c0b84ebc868de8433583072a340c4899e0fc7ad6a80314b880a1466868c9a6a1f640c3d1f2fe7f41f8c541b99d78c8b414263dfa27eba3
+  languageName: node
+  linkType: hard
+
+"undici-types@npm:~7.10.0":
+  version: 7.10.0
+  resolution: "undici-types@npm:7.10.0"
+  checksum: 10/1f3fe777937690ab8a7a7bccabc8fdf4b3171f4899b5a384fb5f3d6b56c4b5fec2a51fbf345c9dd002ff6716fd440a37fa8fdb0e13af8eca8889f25445875ba3
   languageName: node
   linkType: hard
 

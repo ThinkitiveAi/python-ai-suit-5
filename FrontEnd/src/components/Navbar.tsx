@@ -62,13 +62,14 @@ const Navbar: React.FC<NavbarProps> = ({ onTabChange, activeTab = 'patients' }) 
 
   return (
     <Paper
-      shadow="sm"
+      shadow="lg"
       style={{
-        backgroundColor: '#233853',
-        borderRadius: '0px 0px 4px 4px',
+        background: 'linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%)',
+        borderRadius: '0px 0px 12px 12px',
         position: 'sticky',
         top: 0,
         zIndex: 1000,
+        border: '1px solid rgba(255, 255, 255, 0.1)',
       }}
     >
       <Group
@@ -80,10 +81,18 @@ const Navbar: React.FC<NavbarProps> = ({ onTabChange, activeTab = 'patients' }) 
         {/* Logo */}
         <Group gap={6}>
           <Text
-            size="sm"
-            fw={500}
+            size="lg"
+            fw={700}
             c="white"
-            style={{ fontFamily: 'Roboto, sans-serif' }}
+            style={{ 
+              fontFamily: 'Inter, sans-serif',
+              background: 'linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%)',
+              backgroundClip: 'text',
+              WebkitBackgroundClip: 'text',
+              WebkitTextFillColor: 'transparent',
+              textShadow: '0 2px 4px rgba(0,0,0,0.1)',
+              letterSpacing: '0.5px'
+            }}
           >
             Sample EMR
           </Text>
@@ -107,22 +116,26 @@ const Navbar: React.FC<NavbarProps> = ({ onTabChange, activeTab = 'patients' }) 
                     flexDirection: 'column',
                     alignItems: 'center',
                     gap: 4,
-                    padding: '0 8px',
+                    padding: '8px 12px',
                     minHeight: isActive ? 14 : 'auto',
-                    transition: 'all 0.2s ease',
-                    opacity: isHovered ? 0.8 : 1,
+                    transition: 'all 0.3s ease',
+                    opacity: isHovered ? 0.9 : 1,
+                    borderRadius: '8px',
+                    background: isHovered ? 'rgba(255, 255, 255, 0.1)' : 'transparent',
+                    transform: isHovered ? 'translateY(-1px)' : 'translateY(0)',
                   }}
                 >
                   <Group gap={8} justify="center" align="center" style={{ padding: '0 4px' }}>
                     <Text
                       size="sm"
                       c="white"
-                      fw={400}
+                      fw={isActive ? 600 : 400}
                       style={{
-                        fontFamily: 'Roboto, sans-serif',
+                        fontFamily: 'Inter, sans-serif',
                         fontSize: 14,
                         lineHeight: '1em',
                         textAlign: 'center',
+                        textShadow: isActive ? '0 1px 2px rgba(0,0,0,0.1)' : 'none',
                       }}
                     >
                       {item.label}
@@ -135,10 +148,11 @@ const Navbar: React.FC<NavbarProps> = ({ onTabChange, activeTab = 'patients' }) 
                       style={{
                         width: '100%',
                         height: 3,
-                        backgroundColor: '#ffffff',
+                        background: 'linear-gradient(90deg, #fbbf24 0%, #f59e0b 100%)',
                         borderRadius: '2px 2px 0px 0px',
                         position: 'absolute',
                         bottom: -4,
+                        boxShadow: '0 2px 4px rgba(251, 191, 36, 0.3)',
                       }}
                     />
                   )}

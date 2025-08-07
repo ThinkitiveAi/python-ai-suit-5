@@ -1,0 +1,186 @@
+# Page snapshot
+
+```yaml
+- button:
+  - img
+- heading "Enhanced Provider Availability Management" [level=2]:
+  - img
+  - text: Enhanced Provider Availability Management
+- paragraph: Dr. Sarah Johnson • Cardiologist • Thu, Aug 7
+- button "Add Availability":
+  - img
+  - text: Add Availability
+- button "Refresh":
+  - img
+  - text: Refresh
+- paragraph: Availability Statistics
+- img
+- paragraph: Utilization
+- paragraph: 30.0%
+- paragraph: "12"
+- paragraph: Available
+- paragraph: "6"
+- paragraph: Booked
+- paragraph: Appointment Statistics
+- paragraph: "15"
+- paragraph: Total
+- paragraph: 20.0%
+- paragraph: Completion
+- tablist:
+  - tab "Availability Slots" [selected]:
+    - img
+    - text: Availability Slots
+  - tab "Appointments":
+    - img
+    - text: Appointments
+- tabpanel "Availability Slots":
+  - heading "Availability Slots" [level=3]
+  - text: 2 slots
+  - table:
+    - rowgroup:
+      - row "Date Time Duration Status Type Actions":
+        - cell "Date"
+        - cell "Time"
+        - cell "Duration"
+        - cell "Status"
+        - cell "Type"
+        - cell "Actions"
+    - rowgroup:
+      - row "Mon, Jan 15 09:00 - 10:00 60 min Available Consultation":
+        - cell "Mon, Jan 15"
+        - cell "09:00 - 10:00"
+        - cell "60 min"
+        - cell "Available"
+        - cell "Consultation"
+        - cell:
+          - button:
+            - img
+          - button:
+            - img
+          - button:
+            - img
+      - row "Mon, Jan 15 10:00 - 11:00 60 min Booked Follow-up":
+        - cell "Mon, Jan 15"
+        - cell "10:00 - 11:00"
+        - cell "60 min"
+        - cell "Booked"
+        - cell "Follow-up"
+        - cell:
+          - button:
+            - img
+          - button:
+            - img
+- dialog "Add Availability Slot":
+  - banner:
+    - heading "Add Availability Slot" [level=2]
+    - button:
+      - img
+  - button:
+    - img
+  - button "August 2025"
+  - button:
+    - img
+  - table:
+    - rowgroup:
+      - row "Mo Tu We Th Fr Sa Su":
+        - cell "Mo"
+        - cell "Tu"
+        - cell "We"
+        - cell "Th"
+        - cell "Fr"
+        - cell "Sa"
+        - cell "Su"
+    - rowgroup:
+      - row "28 July 2025 29 July 2025 30 July 2025 31 July 2025 1 August 2025 2 August 2025 3 August 2025":
+        - cell "28 July 2025":
+          - button "28 July 2025": "28"
+        - cell "29 July 2025":
+          - button "29 July 2025": "29"
+        - cell "30 July 2025":
+          - button "30 July 2025": "30"
+        - cell "31 July 2025":
+          - button "31 July 2025": "31"
+        - cell "1 August 2025":
+          - button "1 August 2025": "1"
+        - cell "2 August 2025":
+          - button "2 August 2025": "2"
+        - cell "3 August 2025":
+          - button "3 August 2025": "3"
+      - row "4 August 2025 5 August 2025 6 August 2025 7 August 2025 8 August 2025 9 August 2025 10 August 2025":
+        - cell "4 August 2025":
+          - button "4 August 2025": "4"
+        - cell "5 August 2025":
+          - button "5 August 2025": "5"
+        - cell "6 August 2025":
+          - button "6 August 2025": "6"
+        - cell "7 August 2025":
+          - button "7 August 2025": "7"
+        - cell "8 August 2025":
+          - button "8 August 2025": "8"
+        - cell "9 August 2025":
+          - button "9 August 2025": "9"
+        - cell "10 August 2025":
+          - button "10 August 2025": "10"
+      - row "11 August 2025 12 August 2025 13 August 2025 14 August 2025 15 August 2025 16 August 2025 17 August 2025":
+        - cell "11 August 2025":
+          - button "11 August 2025": "11"
+        - cell "12 August 2025":
+          - button "12 August 2025": "12"
+        - cell "13 August 2025":
+          - button "13 August 2025": "13"
+        - cell "14 August 2025":
+          - button "14 August 2025": "14"
+        - cell "15 August 2025":
+          - button "15 August 2025": "15"
+        - cell "16 August 2025":
+          - button "16 August 2025": "16"
+        - cell "17 August 2025":
+          - button "17 August 2025": "17"
+      - row "18 August 2025 19 August 2025 20 August 2025 21 August 2025 22 August 2025 23 August 2025 24 August 2025":
+        - cell "18 August 2025":
+          - button "18 August 2025": "18"
+        - cell "19 August 2025":
+          - button "19 August 2025": "19"
+        - cell "20 August 2025":
+          - button "20 August 2025": "20"
+        - cell "21 August 2025":
+          - button "21 August 2025": "21"
+        - cell "22 August 2025":
+          - button "22 August 2025": "22"
+        - cell "23 August 2025":
+          - button "23 August 2025": "23"
+        - cell "24 August 2025":
+          - button "24 August 2025": "24"
+      - row "25 August 2025 26 August 2025 27 August 2025 28 August 2025 29 August 2025 30 August 2025 31 August 2025":
+        - cell "25 August 2025":
+          - button "25 August 2025": "25"
+        - cell "26 August 2025":
+          - button "26 August 2025": "26"
+        - cell "27 August 2025":
+          - button "27 August 2025": "27"
+        - cell "28 August 2025":
+          - button "28 August 2025": "28"
+        - cell "29 August 2025":
+          - button "29 August 2025": "29"
+        - cell "30 August 2025":
+          - button "30 August 2025": "30"
+        - cell "31 August 2025":
+          - button "31 August 2025": "31"
+  - text: Start Time
+  - textbox "Start Time": 09:00
+  - text: End Time
+  - textbox "End Time": 10:00
+  - text: Duration (minutes)
+  - textbox "Duration (minutes)": "60"
+  - text: Status
+  - textbox "Status": Available
+  - img
+  - text: Appointment Type
+  - textbox "Appointment Type"
+  - text: Notes
+  - textbox "Notes"
+  - checkbox "Recurring"
+  - text: Recurring
+  - button "Cancel"
+  - button "Create"
+```

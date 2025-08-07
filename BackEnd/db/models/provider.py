@@ -1,7 +1,7 @@
 """
 Provider database models for both SQL and NoSQL databases.
 """
-from datetime import datetime
+from datetime import datetime, timezone
 from typing import Optional
 from sqlalchemy import Column, String, Integer, Boolean, DateTime, Text, JSON, func
 from sqlalchemy.dialects.postgresql import UUID
@@ -43,6 +43,9 @@ class ProviderSQL(Base):
     
     # Relationships
     # refresh_tokens = relationship("RefreshToken", back_populates="provider", cascade="all, delete-orphan")
+    availability_slots = relationship("ProviderAvailability", back_populates="provider", cascade="all, delete-orphan")
+    appointments = relationship("Appointment", back_populates="provider", cascade="all, delete-orphan")
+    availability_templates = relationship("AvailabilityTemplate", back_populates="provider", cascade="all, delete-orphan")
     
     def __repr__(self):
         return f"<Provider(id={self.id}, email={self.email}, specialization={self.specialization})>"

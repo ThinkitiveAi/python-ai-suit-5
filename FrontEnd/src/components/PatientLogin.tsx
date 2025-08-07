@@ -147,7 +147,7 @@ const PatientLogin: React.FC<PatientLoginProps> = ({
       src="data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23e0f2fe' fill-opacity='0.3'%3E%3Cpath d='M40 40c0-11.046-8.954-20-20-20s-20 8.954-20 20 8.954 20 20 20 20-8.954 20-20zm20 0c0-11.046-8.954-20-20-20s-20 8.954-20 20 8.954 20 20 20 20-8.954 20-20z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"
       style={{
         minHeight: '100vh',
-        background: 'linear-gradient(135deg, #e0f7fa 0%, #f3e5f5 50%, #fff3e0 100%)',
+        background: 'linear-gradient(135deg, #8b5cf6 0%, #a855f7 50%, #c084fc 100%)',
       }}
     >
       <Container size="sm" py={60}>
@@ -168,13 +168,13 @@ const PatientLogin: React.FC<PatientLoginProps> = ({
             <Stack align="center" mb={40}>
               <Box
                 style={{
-                  background: 'linear-gradient(135deg, #3b82f6 0%, #10b981 100%)',
+                  background: 'linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%)',
                   borderRadius: '50%',
                   padding: 20,
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  boxShadow: '0 4px 20px rgba(59, 130, 246, 0.3)',
+                  boxShadow: '0 8px 32px rgba(139, 92, 246, 0.4)',
                 }}
               >
                 <IconHeart size={36} color="white" />

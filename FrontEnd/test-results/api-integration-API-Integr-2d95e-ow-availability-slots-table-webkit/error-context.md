@@ -1,0 +1,49 @@
+# Page snapshot
+
+```yaml
+- button:
+  - img
+- heading "Enhanced Provider Availability Management" [level=2]:
+  - img
+  - text: Enhanced Provider Availability Management
+- paragraph: Dr. Sarah Johnson • Cardiologist • Thu, Aug 7
+- button "Add Availability":
+  - img
+  - text: Add Availability
+- button "Refresh" [disabled]:
+  - img
+  - text: Refresh
+- paragraph: Availability Statistics
+- img
+- paragraph: Utilization
+- paragraph: 0.0%
+- paragraph: "0"
+- paragraph: Available
+- paragraph: "0"
+- paragraph: Booked
+- paragraph: Appointment Statistics
+- paragraph: "0"
+- paragraph: Total
+- paragraph: 0.0%
+- paragraph: Completion
+- tablist:
+  - tab "Availability Slots" [selected]:
+    - img
+    - text: Availability Slots
+  - tab "Appointments":
+    - img
+    - text: Appointments
+- tabpanel "Availability Slots":
+  - heading "Availability Slots" [level=3]
+  - text: 0 slots
+  - table:
+    - rowgroup:
+      - row "Date Time Duration Status Type Actions":
+        - cell "Date"
+        - cell "Time"
+        - cell "Duration"
+        - cell "Status"
+        - cell "Type"
+        - cell "Actions"
+    - rowgroup
+```
